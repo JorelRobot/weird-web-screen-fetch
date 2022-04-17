@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weird Screenfetch</title>
+
+    <%- include('partials/bootstrap-styles.html') %>
+</head>
+
+<body>
+    <%- include('partials/navbar.html') %>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto p-3">
+                        <p class="display-5 text-center mb-5">This project was made only to practice Node JS and
+                            some NPM modules</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-10 mt-5 mx-auto">
+                        <p class="display-6 mb-5">Modules</p>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                        data-bs-toggle="list" href="#express" role="tab"
+                                        aria-controls="list-home">Express</a>
+                                    <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                        data-bs-toggle="list" href="#ejs" role="tab"
+                                        aria-controls="list-profile">EJS</a>
+                                    <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                        data-bs-toggle="list" href="#morgan" role="tab"
+                                        aria-controls="list-messages">Morgan</a>
+                                    <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                        data-bs-toggle="list" href="#path" role="tab"
+                                        aria-controls="list-settings">Path</a>
+                                    <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                        data-bs-toggle="list" href="#mysql" role="tab"
+                                        aria-controls="list-settings">MySQL</a>
+                                    <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                        data-bs-toggle="list" href="#nodemon" role="tab"
+                                        aria-controls="list-settings">Nodemon</a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="express" role="tabpanel"
+                                        aria-labelledby="list-home-list">A module framework who facilitates the backend
+                                        code management 
+                                        <div class="mt-4 text-end">
+                                            <a class="text-danger" href="https://www.npmjs.com/package/express">https://www.npmjs.com/package/express</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="ejs" role="tabpanel"
+                                        aria-labelledby="list-profile-list">This module facilitates the management of
+                                        views templates
+                                        <div class="mt-4 text-end">
+                                            <a class="text-danger" href="https://www.npmjs.com/package/ejs">https://www.npmjs.com/package/ejs</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="morgan" role="tabpanel"
+                                        aria-labelledby="list-messages-list">Shows in console the requests status for
+                                        each request in our server 
+                                        <div class="mt-4 text-end">
+                                            <a class="text-danger" href="https://www.npmjs.com/package/morgan">https://www.npmjs.com/package/morgan</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="path" role="tabpanel"
+                                        aria-labelledby="list-settings-list">Manages the usage of paths while we are
+                                        developing
+                                        <div class="mt-4 text-end">
+                                            <a class="text-danger" href="https://www.npmjs.com/package/path">https://www.npmjs.com/package/path</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="mysql" role="tabpanel"
+                                        aria-labelledby="list-settings-list">This module provides functions which allow us manage the our database throught coding
+                                        <div class="mt-4 text-end">
+                                            <a class="text-danger" href="https://www.npmjs.com/package/mysql">https://www.npmjs.com/package/mysql</a>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nodemon" role="tabpanel"
+                                        aria-labelledby="list-settings-list">This modeule is like a dev tool which restarts our server each time you save your code
+                                        <div class="mt-4 text-end">
+                                            <a class="text-danger" href="https://www.npmjs.com/package/nodemon">https://www.npmjs.com/package/nodemon</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <%- include('partials/bootstrap-scripts.html') %>
+</body>
+
+</html>

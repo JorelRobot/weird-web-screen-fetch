@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weird Screenfetch</title>
+
+    <%- include('partials/bootstrap-styles.html') %>
+</head>
+
+<body>
+    <%- include('partials/navbar.html') %>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto p-5 shadow">
+                            <p class="display-4 text-center mb-5">Have fun?</p>
+                            <form action="/register" method="post">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="country" class="form-label">Country</label>
+                                    <input type="text" class="form-control" id="country">
+                                </div>
+                                <div class="d-grid my-5">
+                                    <button class="btn btn-success" type="submit">Sign up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto p-5">
+                            <p class="display-4 text-center mb-5">If you want to unlock the function, just sing up :)</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <%- include('partials/bootstrap-scripts.html') %>
+</body>
+
+</html>
