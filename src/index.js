@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const ejs = require('ejs');
 const path = require('path');
 const app = express();
+require('./database.js');
 
 //Settings
 
